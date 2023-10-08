@@ -1,0 +1,75 @@
+body {
+    font-family: Verdana;
+}
+#kalkulator {
+    width: 195px;
+    height: 320px;
+    background-color: black;
+    margin-left: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50px;
+}
+#display {
+    background-color: black;
+    height: 40px;
+    width: auto;
+    color: white;
+    font-size: 20px;
+    max-width: 80px;
+    min-width: 150px;
+    border: 3px orange solid;
+}
+#row1 {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+    margin: 15px;
+    text-align: right;
+}
+.przyciski1 {
+    background-color: gray;
+    color: black;
+    border-radius: 100%;
+    border: 0;
+    text-align: center;    
+    height: 40px;
+    width: 40px;
+    padding: 7px 5px 5px 5px;
+    font-size: 18px;
+}
+.przyciski2 {
+    background-color: orange;
+    color: white;
+    border-radius: 100%;
+    border: 0;
+    text-align: center;    
+    height: 40px;
+    width: 40px;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+}
+.przyciski3 {
+    background-color: #353635;
+    color: white;
+    border: 0;
+    border-radius: 100%;
+    text-align: center;    
+    height: 40px;
+    width: 40px;
+    padding: 7px 5px 5px 5px;
+    font-size: 18px;
+}
+#przycisk0 {
+    border-radius: 25%;
+    width: 86px;
+}
+.przyciski1, .przyciski2, .przyciski3 {
+    float: left;
+    margin: 3px;
+}
+#row2, #row3, #row4, #row5, #row6 {
+    clear: both;
+    padding-left: 10px;
+}
