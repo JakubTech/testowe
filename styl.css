@@ -73,3 +73,12 @@ body {
     clear: both;
     padding-left: 10px;
 }
+.przyciski1:hover {
+    background-color: silver;
+}
+.przyciski2:hover {
+    background-color: gold;
+}
+.przyciski3:hover {
+    background-color: gray;
+}
