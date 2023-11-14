@@ -1,46 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator</title>
+    <title>Rezerwacja autokaru PKS Biłgoraj</title>
     <link rel="stylesheet" href="styl.css">
-    <script src="skrypt.js"></script>
 </head>
 <body>
-    <div id="kalkulator">
-        <div id="row1">
-            <input type="text" name="display" id="display" maxlength="13" readonly>
+    <section class="baner">
+        <div class="container">
+            <h1>Witamy w rezerwacji miejsca w autokarze PKS Biłgoraj</h1>
         </div>
-        <div id="row2">
-            <input type="button" class="przyciski1" id="przyciskAC" value="AC" onclick="wyczyscEkran()"></input>
-            <input type="button" class="przyciski1" id="przyciskPotega" value="^" onclick="dodajDoWyniku('**')"></input>
-            <input type="button" class="przyciski1" id="przyciskProcenty" value="%" onclick="dodajDoWyniku('%')"></input>
-            <input type="button" class="przyciski2" id="przyciskDzielenie" value="÷" onclick="dodajDoWyniku('/')"></input>
+    </section>
+    <section class="lewy">
+        <div class="container">
+            <img src="autokar.jpg" alt="autokar pks biłgoraj">
         </div>
-        <div id="row3">
-            <input type="button" class="przyciski3" id="przycisk7" value="7" onclick="dodajDoWyniku('7')"></input>
-            <input type="button" class="przyciski3" id="przycisk8" value="8" onclick="dodajDoWyniku('8')"></input>
-            <input type="button" class="przyciski3" id="przycisk9" value="9" onclick="dodajDoWyniku('9')"></input>
-            <input type="button" class="przyciski2" id="przyciskMnozenie" value="*" onclick="dodajDoWyniku('*')"></input>
+    </section>
+    <section class="prawy">
+        <div class="container">
+            <h4>Z nami bezpiecznie trafisz do domu w każdym stanie nietrzeźwości!</h4>
+            <ol>
+                <li>Biłgoraj od 40 zł</li>
+                <li>Zwierzyniec od 30 zł</li>
+                <li>Szczebrzeszyn od 50 zł</li>
+            </ol>
         </div>
-        <div id="row4">
-            <input type="button" class="przyciski3" id="przycisk4" value="4" onclick="dodajDoWyniku('4')"></input>
-            <input type="button" class="przyciski3" id="przycisk5" value="5" onclick="dodajDoWyniku('5')"></input>
-            <input type="button" class="przyciski3" id="przycisk6" value="6" onclick="dodajDoWyniku('6')"></input>
-            <input type="button" class="przyciski2" id="przyciskOdejmowanie" value="-" onclick="dodajDoWyniku('-')"></input>
+    </section>
+    <section class="dolny">
+        <div class="container">
+            <h2>Zarezerwuj miejsce on-line</h2>
+            <form action="">
+                <label for="dane">Imię i nazwisko</label> <br>
+                <input type="text" class="inputy" name="dane" id="dane" required> <br>
+                <label for="data">Data: (format rrrr-mm-dd)</label> <br>
+                <input type="text" class="inputy" name="data" id="data" required pattern="\d{4}-\d{2}-\d{2}" placeholder="rrrr-mm-dd"> <br>
+                <label for="trzeźwość">Czy będziesz trzeźwy?</label><br>
+                TAK<input type="radio" name="trzeźwość" id="tak" value="tak" checked> NIE <input type="radio" name="trzeźwość" id="nie" value="nie"> <br>
+                <label for="siedzenie">Gdzie chcesz siedzieć? (z przodu, z tyłu, po środku)</label> <br>
+                <input type="text" class="inputy" name="siedzenie" id="siedzenie"> <br>
+                <input type="checkbox" name="zgoda" id="zgoda" checked> Zgadzam się na przetwarzanie danych osobowych <br>
+                <input type="reset" value="Wyczyść"> <input type="submit" value="Rezerwuj">
+            </form>
         </div>
-        <div id="row5">
-            <input type="button" class="przyciski3" id="przycisk1" value="1" onclick="dodajDoWyniku('1')"></input>
-            <input type="button" class="przyciski3" id="przycisk2" value="2" onclick="dodajDoWyniku('2')"></input>
-            <input type="button" class="przyciski3" id="przycisk3" value="3" onclick="dodajDoWyniku('3')"></input>
-            <input type="button" class="przyciski2" id="przyciskDodawanie" value="+" onclick="dodajDoWyniku('+')"></input>
+    </section>
+    <section class="stopka">
+        <div class="container">
+            Stronę internetową opracował: Jakub Nizio
         </div>
-        <div id="row6">
-            <input type="button" class="przyciski3" id="przycisk0" value="0" onclick="dodajDoWyniku('0')"></input>
-            <input type="button" class="przyciski3" id="przyciskKropka" value="." onclick="dodajDoWyniku('.')"></input>
-            <input type="submit" class="przyciski2" id="przyciskWynik" value="=" onclick="oblicz()"></input>
-        </div>
-    </div>
+    </section>
 </body>
 </html>
