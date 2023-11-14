@@ -1,84 +1,109 @@
 body {
+    background-color: #F6E5DC;
     font-family: Verdana;
 }
-#kalkulator {
-    width: 195px;
-    height: 320px;
-    background-color: black;
-    margin-left: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 50px;
+.baner {
+    background-color: #2F180C;
+    text-align: center;
+    color: khaki;
+    height: 60px;
+    padding: 5px 0 10px 0;
 }
-#display {
-    background-color: black;
-    height: 40px;
-    width: auto;
-    color: white;
-    font-size: 20px;
-    max-width: 80px;
-    min-width: 150px;
-    border: 3px orange solid;
-}
-#row1 {
-    background-color: black;
-    color: white;
-    font-size: 30px;
-    padding-top: 10px;
-    margin: 15px;
-    text-align: right;
-}
-.przyciski1 {
-    background-color: gray;
-    color: black;
-    border-radius: 100%;
-    border: 0;
-    text-align: center;    
-    height: 40px;
-    width: 40px;
-    padding: 7px 5px 5px 5px;
-    font-size: 18px;
-}
-.przyciski2 {
-    background-color: orange;
-    color: white;
-    border-radius: 100%;
-    border: 0;
-    text-align: center;    
-    height: 40px;
-    width: 40px;
-    padding: 5px 5px 5px 5px;
-    font-size: 20px;
-}
-.przyciski3 {
-    background-color: #353635;
-    color: white;
-    border: 0;
-    border-radius: 100%;
-    text-align: center;    
-    height: 40px;
-    width: 40px;
-    padding: 7px 5px 5px 5px;
-    font-size: 18px;
-}
-#przycisk0 {
-    border-radius: 25%;
-    width: 86px;
-}
-.przyciski1, .przyciski2, .przyciski3 {
+.lewy {
     float: left;
-    margin: 3px;
+    width: 60%;
+    display: block;
 }
-#row2, #row3, #row4, #row5, #row6 {
+.prawy {
+    float: left;
+    width: 30%;
+    font-size: 150%;
+    padding: 70px;
+}
+.dolny {
     clear: both;
-    padding-left: 10px;
+    background-color: #D0B6A8;
+    text-align: center;
+    padding: 30px;
 }
-.przyciski1:hover {
-    background-color: silver;
+.stopka {
+    background-color: #2F180C;
+    color: khaki;
+    height: 60px;
+    text-align: center;
+    padding-top: 15px;
 }
-.przyciski2:hover {
-    background-color: gold;
+ol {
+    width: 100%;
 }
-.przyciski3:hover {
-    background-color: gray;
+img {
+    padding-top: 30px;
+    padding-left: 50px;
+    width: 80%;
+    height: 325px;
+}
+input {
+    margin: 10px;
+}
+.inputy:hover {
+    color: white;
+    background-color: darkcyan;
+}
+input[type="submit"], input[type="reset"] {
+    margin: 10px;
+    padding: 5px;
+    background-color: #2F180C;
+    color: khaki;
+}
+
+@media only screen and (min-width: 1023px) and (max-width:1439px) {
+    .lewy {
+        width: 50%;
+    }
+    .prawy {
+        padding-top: 25px;
+    }
+    img {
+        padding-top: 50px;
+        height: 250px;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width:1023px) {
+    h1 {
+        font-size: 22px;
+    }
+    .lewy {
+        width: 55%;
+    }
+    .prawy {
+        width: 40%;
+        padding: 0;
+        padding-right: 10px;
+    }
+    img {
+        height: 175px;
+        padding-left: 40px;
+        padding-top: 50px
+    }
+}
+@media only screen and (min-width: 424px) and (max-width:767px) {
+    .baner {
+        height: 75px;
+    }
+    .lewy {
+        width: 100%;
+        float: none;
+    }
+    .prawy {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    img {
+        padding-left: 0;
+        width: 100%;
+    }
+    h2 {
+        font-size: 1.25em;
+    }
 }
